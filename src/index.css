@@ -7,7 +7,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 2px solid springgreen;
+  border-radius: 10px;
+  margin: 10% auto;
+  padding: 2px;
+  background-color: rgb(17, 17, 31);
+}
+
+.screen {
+  width: 100%;
+  
+  
+  color: springgreen;
+  border-radius: 10px;
+  margin: 0 -2px;
+  text-align: right;
+  padding: 2px;
+  font-size: 30px;
+}
+
+.formula, #display {
+  margin: 0 5px;
+}
+
+.formula {
+  font-size: 15px;
+}
+
+.keypad {
+  display: grid;
+  grid-column-gap: 2px;
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
+}
+
+.button {
+  height: 60px;
+  font-size: 40px;
+  color: rgb(9, 145, 77);
+  background-color: transparent;
+  border: 1px solid springgreen;
+  margin: 1px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: default;
 }
